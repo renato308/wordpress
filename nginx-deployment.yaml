@@ -17,10 +17,3 @@ spec:
         image: nginx:latest
         ports:
         - containerPort: 80
-        volumeMounts:
-        - name: wordpress-volume
-          mountPath: /usr/share/nginx/html
-      volumes:
-      - name: wordpress-volume
-        persistentVolumeClaim:
-          claimName: wordpress-claim
