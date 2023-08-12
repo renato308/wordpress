@@ -17,11 +17,11 @@ spec:
         image: wordpress:latest
         env:
           - name: WORDPRESS_DB_HOST
-            value: nome_do_servico_mariadb
+            value: mariadb
           - name: WORDPRESS_DB_USER
-            value: seu_usuario
+            value: root
           - name: WORDPRESS_DB_PASSWORD
-            value: sua_senha
+            value: sua_senha_aqui
           - name: WORDPRESS_DB_NAME
             value: seu_banco_de_dados
         ports:
